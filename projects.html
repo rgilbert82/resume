@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ryan Gilbert - projects</title>
+    <meta charset="UTF-8" />
+    <script src="javascripts/jquery-3.1.1.js"></script>
+    <script src="javascripts/handlebars-v4.0.5.js"></script>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+    <link rel="stylesheet" href="stylesheets/whitespace-reset.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <div id="header-wrapper">
+        <div>
+          <h1>Ryan Gilbert</h1>
+          <h4>Web Developer - <small>Los Angeles, CA</small></h4>
+        </div>
+        <div>
+          <h5><a href="mailto:ry.gil.online@gmail.com">ry.gil.online@gmail.com</a></h5>
+          <h5>(203) 214-5638</h5>
+        </div>
+      </div>
+
+      <nav id="projects-nav">
+        <ul>
+          <li><a href="#rails-apps">Rails Apps</a></li><!--
+          --><li><a href="#express-apps">Express Apps</a></li><!--
+          --><li><a href="#misc-apps">Misc Small Apps</a></li><!--
+          --><li><a href="index.html">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="projects-header">
+      <h1>Projects&nbsp;&nbsp;Portfolio</h1>
+      <aside>All projects were made from scratch, without any assistance or supervision.</aside>
+    </div>
+
+    <section id="rails-apps">
+      <h2>Rails Apps</h2>
+
+      <ul class="apps-list">
+        <li id="trello-rails">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/trello9.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Trello Clone</a></h3>
+            <p>A project management app, based on <a href="https://trello.com/" target="_blank">Trello</a>. Made with <b>Rails 5</b> and <b>Backbone.js</b>.</p>
+            <p>Subscribed users can manage their accounts, update payment info, upload images, and create boards, lists, and cards. Cards can hold a variety of information, such as notes, due dates, labels, images, and activity. Cards can be moved between lists, and lists can be moved between boards via drag &amp; drop functionality. </p>
+          </div>
+        </li>
+
+        <li id="yelp-clone">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/yelp1.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Yelp Clone</a></h3>
+            <p>A review app, based on <a href="https://www.yelp.com/" target="_blank">Yelp</a>. Made with <b>Rails 5</b>.</p>
+            <p>Users can register for accounts, edit account info, make credit card payments, setup business pages, search businesses, review businesses, upload photos, send messages to other users, befriend other users, follow other users, and interact on forums. </p>
+          </div>
+        </li>
+
+        <li id="synth-forum">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/synth2.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Synth Forum</a></h3>
+            <p>A single-page forum app for synthesizer enthusiasts, based on <a href="https://www.reddit.com/" target="_blank">Reddit</a>. Made with <b>Rails 5</b> and <b>Ember.js</b>.</p>
+            <p>Users can manage accounts, post topics in forums, comment on topics, and send messages to other users. </p>
+          </div>
+        </li>
+
+        <li id="personal-planner">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/planner2.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Personal Planner</a></h3>
+            <p>A personal planner app, featuring an address book, calendar, note pad, and todo list. Made with <b>Rails 4</b>.</p>
+            <p>Users can register for accounts; edit account info; and create and edit contacts, notes, events and todos. Notes, events and todos appear on the calendar on the appropriate date.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="express-apps">
+      <h2>Express Apps</h2>
+
+      <ul class="apps-list">
+
+        <li id="tweeter">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/tweeter1.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Tweeter</a></h3>
+            <p>A single-page clone of <a href="https://twitter.com/" target="_blank">Twitter</a>. Made with an <b>Express</b> back-end and <b>ReactJS</b> front-end.</p>
+            <p>Users can register for accounts, edit account info, create tweets, upload photos, follow other users, and retweet other users' tweets.</p>
+          </div>
+        </li>
+
+        <li id="fivechan">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/5chan1.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Anon Forum - 5chan</a></h3>
+            <p>A single-page, family-friendly version of <a href="http://www.4chan.org" target="_blank">4chan</a>. Made with an <b>Express</b> back-end and <b>Vanilla ES6</b> front-end.</p>
+            <p>Users can anonymously post, comment, and upload images to various forums.</p>
+          </div>
+        </li>
+
+        <li id="discography">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/discography2.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">RG Discography</a></h3>
+            <p>A single-page music collection app, based on <a href="https://bandcamp.com/" target="_blank">Bandcamp</a>. Made with <b>Express</b> and <b>Backbone.js</b>.</p>
+            <p>Users can navigate through a discography, listen to albums and download albums. Albums are mostly comprised of infectious acid Nintendo grooves.</p>
+          </div>
+        </li>
+
+        <li id="proto-blog">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/proto2.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Proto Blog</a></h3>
+            <p>A single-page Mega Man themed blog site, similar to <a href="http://www.politico.com/" target="_blank">Politico</a>. Made with <b>Express</b> and <b>Backbone.js</b>.</p>
+            <p>Articles are arranged by date, author and category. Users can log in and leave comments on articles.</p>
+          </div>
+        </li>
+
+        <!-- <li id="trello-clone">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/trello1.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Trello Clone <small>lite</small></a></h3>
+            <p>A single-page project management app, based on <a href="https://trello.com/" target="_blank">Trello</a>. Made with <b>Express</b> and <b>Backbone.js</b>.</p>
+            <p>Users can create and manage boards, lists, and cards. This is a stripped-down version of my Rails Trello app.</p>
+          </div>
+        </li> -->
+      </ul>
+    </section>
+
+    <section id="misc-apps">
+      <h2>Misc Small Apps</h2>
+
+      <ul class="apps-list">
+        <li id="contacts-manager">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/contacts1.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Contacts Manager</a></h3>
+            <p>A simple single-page address book app, made with <b>ES5</b> and <b>jQuery</b>.</p>
+            <p>Users can create contacts, edit contacts, and search contacts. Data is stored in localStorage.</p>
+          </div>
+        </li>
+
+        <li id="todo-list">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/todo1.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Todo List</a></h3>
+            <p>A simple single-page todo list app, made with <b>vanilla ES5</b>.</p>
+            <p>Users can create todos, edit todos, mark todos as complete or incomplete, and search todos by date. Data is stored in localStorage.</p>
+          </div>
+        </li>
+
+        <!-- <li id="postit">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/postit1.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Postit</a></h3>
+            <p>A forum app, based on <a href="https://www.reddit.com/" target="_blank">Reddit</a>. Made with Rails 4.</p>
+            <p>Users can register for accounts, edit their profile, create posts, leave comments on posts, and vote on posts and comments.</p>
+            <p><b>*</b> This was created with assistance from <a href="https://launchschool.com/" target="_blank">launchschool.com</a>, as part of their Rails curriculum.</p>
+          </div>
+        </li> -->
+
+        <li id="ledzep">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/ledzep1.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Music Collection</a></h3>
+            <p>A simple single-page music collection app, made with <b>Backbone.js</b>.</p>
+            <p>Users can scan through Led Zeppelin's glorious discography.</p>
+          </div>
+        </li>
+
+        <li id="contacts-sinatra">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/contacts_sinatra_2.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">Contacts Manager</a></h3>
+            <p>Yet another contacts manager app!</p>
+            <p>Made with <b>Sinatra</b>.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div id="footer-wrapper">
+        <h6>Ryan Gilbert</h6>
+        <h6><a href="mailto:ry.gil.online@gmail.com">ry.gil.online@gmail.com</a></h6>
+        <h6>(203) 214-5638</h6>
+      </div>
+    </footer>
+
+    <div id="modal-layer">
+      <div id="modal-dark-layer">
+        <span>close</span>
+      </div>
+
+      <div id="project-modal">
+        <div id="project-window">
+        </div>
+      </div>
+    </div>
+
+    <!-- TEMPLATES -->
+
+    <script id="trello-clone-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/trello1.jpg" />
+        <img src="images/trello2.jpg" />
+        <img src="images/trello3.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Trello Clone <small>lite</small></h1>
+        <div id="project-profile-links">
+          <a href="https://rg-trello-clone.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/trello_clone" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>This is a single-page clone of <a href="https://trello.com/" target="_blank">Trello</a> that I made using Express, Backbone.js, jQuery, jQuery UI, Handlebars, Jade and Stylus.</p>
+          <p>Users can create boards, lists, and cards. Cards can hold a variety of information, such as notes, due dates, labels, and activity. Cards can be moved between lists, and lists can be moved between boards via drag &amp; drop functionality.</p>
+          <p>The drag &amp; drop functionality was implemented using jQuery UI's draggable and sortable methods.</p>
+          <p>This was primarily a front-end practice project, so I didn't set up a database or put too much energy into the back-end. The app's user content is just stored in JSON files. The Rails version of my Trello project is much more fleshed-out.</p>
+        </div>
+      </div>
+    </script>
+
+    <script id="tweeter-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/tweeter_erd.png" />
+        <img src="images/tweeter1.jpg" />
+        <img src="images/tweeter2.jpg" />
+        <img src="images/tweeter3.jpg" />
+        <img src="images/tweeter4.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Tweeter</h1>
+        <div id="project-profile-links">
+          <a href="https://rg-tweeter.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/twitter_clone_frontend" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>This is a single-page social media app in the style of <a href="https://twitter.com/" target="_blank">Twitter</a>. I used React for the front-end, and Express with a PostgreSQL database for a back-end.</p>
+          <p>It occurred to me that I hadn't yet attempted to make my own version of Twitter, so I thought I'd give that a whirl. Learning React had taught me a lot about code cleanliness and organization, so my primary goal here was to make the code for this project as well-structured and as easy to understand as possible. I chose to separate the front and back ends into different repositories for that very reason.</p>
+          <p>Features include:</p>
+          <ul>
+            <li>Users can create and maintain accounts.</li>
+            <li>Registered users can follow and unfollow other users.</li>
+            <li>Registered users can tweet, retweet, and comment on tweets.</li>
+            <li>Registered users can upload images for their tweets.</li>
+            <li>Image uploads are browser-based, and files are hosted by Amazon S3.</li>
+            <li>Authentication is token-based. Tokens are stored in cookies. </li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+    <script id="fivechan-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/5chan_erd.png" />
+        <img src="images/5chan1.jpg" />
+        <img src="images/5chan2.jpg" />
+        <img src="images/5chan3.jpg" />
+        <img src="images/5chan4.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Anon Forum - 5chan</h1>
+        <div id="project-profile-links">
+          <a href="https://rg-anon-board.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/5chan" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>This is a single-page anonymous message board app. It is similar to <a href="http://www.4chan.org" target="_blank">4chan</a>, but friendlier, and without all the trolling and name-calling.</p>
+          <p>I used Express with a PostgreSQL database for the backend, and only vanilla ES6 for the front.</p>
+          <p>This was another exercise in code organization, similar to my Twitter clone, but this time I chose not to use a front-end framework in an effort to get back to basics.</p>
+          <p>Features include:</p>
+          <ul>
+            <li>Users can anonymously create posts.</li>
+            <li>Users can anonymously comment on posts.</li>
+            <li>Users can upload images for posts and comments.</li>
+            <li>Admins can delete posts and comments.</li>
+            <li>Image uploads are browser-based, and files are hosted by Amazon S3.</li>
+            <li>Admin authentication is token-based. Tokens are stored in cookies. </li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+    <script id="discography-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/discography1.jpg" />
+        <img src="images/discography2.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>RG Discography</h1>
+        <div id="project-profile-links">
+          <a href="https://rg-discography.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/rg_discography" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>This is a single-page music discography app in the style of <a href="https://bandcamp.com/" target="_blank">Bandcamp</a>. I built it using Express and Backbone.js.</p>
+          <p>Users can navigate through a discography, listen to albums and download albums.</p>
+          <p>The albums are all made up of original chiptunes and acid trax that I produced over the last few years for fun. Check out my super dope synth programming skillz! The mp3 files are being hosted on <a href="https://archive.org/" target="_blank">archive.org</a>.</p>
+          <p>This was primarily a front-end practice project, with a focus on JavaScript and CSS. There is no database on the back-end.</p>
+        </div>
+      </div>
+    </script>
+
+
+    <script id="proto-blog-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/proto1.jpg" />
+        <img src="images/proto2.jpg" />
+        <img src="images/proto3.jpg" />
+        <img src="images/proto4.jpg" />
+        <img src="images/proto5.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Proto Blog</h1>
+        <div id="project-profile-links">
+          <a href="https://proto-blog.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/proto_blog" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>This is a single-page news/blog app that I made with Express and Backbone.js. The general look of the app is based on <a href="http://www.politico.com/" target="_blank">Politico</a>, but I took several creative liberties with the design.</p>
+          <p>I populated the site with Mega Man themed dummy content rather than just ripping the content directly from Politico. I had been revisiting some of the old NES Mega Man games, and I thought it would be fun to do something like that.</p>
+          <p>Articles can be arranged by date, author and category. Users can log in and leave comments on articles.</p>
+          <p>This was primarily a front-end practice project, so I didn't set up a database or put too much energy into the back-end. The article data is just stored in JSON files.</p>
+        </div>
+      </div>
+    </script>
+
+    <script id="yelp-clone-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/yelp_erd.png" />
+        <img src="images/yelp1.jpg" />
+        <img src="images/yelp2.jpg" />
+        <img src="images/yelp6.jpg" />
+        <img src="images/yelp3.jpg" />
+        <img src="images/yelp4.jpg" />
+        <img src="images/yelp7.jpg" />
+        <img src="images/yelp5.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Yelp Clone</h1>
+        <div id="project-profile-links">
+          <a href="https://rg-yelp-clone.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/yelp_clone" target="_blank">GitHub</a>
+        </div>
+        <div id="project-profile-description">
+          <p>A review app based on <a href="https://www.yelp.com/" target="_blank">Yelp</a>. Made with Rails 5.</p>
+          <p>My goal for this project was to create a fully functioning review / social media application with a complex database design and a deep user experience.</p>
+          <p>Features include:</p>
+          <ul>
+            <li>Users can sign up for new accounts.</li>
+            <li>Users can make donations to the app. Credit card payments are handled by <a href="https://stripe.com/" target="_blank">Stripe</a>. </li>
+            <li>Registered users can manage their profiles.</li>
+            <li>Registered users can have a password-reset email sent to them if they forget their password.</li>
+            <li>Registered users can send messages to other registered users.</li>
+            <li>Registered users can befriend other registered users.</li>
+            <li>Registered users can follow other registered users.</li>
+            <li>Registered users can create topics and post messages on city-specific forums.</li>
+            <li>Registered users can create and update new businesses.</li>
+            <li>Registered users can write reviews of businesses.</li>
+            <li>Registered users can like reviews.</li>
+            <li>Businesses are shown on city pages and category pages.</li>
+            <li>Businesses can be searched by name, city, or category. Businesses can be filtered by price and a variety of attributes.</li>
+            <li>Businesses can have events.</li>
+            <li>Registered users can bookmark businesses and rsvp to events.</li>
+            <li>Registered users can upload images of businesses. Image uploads are handled by the <a href="https://github.com/carrierwaveuploader/carrierwave" target="_blank">CarrierWave</a> gem, and image files are hosted by Amazon S3.</li>
+            <li>Admins can manage all user accounts and business pages.</li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+    <script id="trello-rails-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/trello_erd.png" />
+        <img src="images/trello10.jpg" />
+        <img src="images/trello4.jpg" />
+        <img src="images/trello5.jpg" />
+        <img src="images/trello1.jpg" />
+        <img src="images/trello9.jpg" />
+        <img src="images/trello6.jpg" />
+        <img src="images/trello7.jpg" />
+        <img src="images/trello8.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Trello Clone</h1>
+        <div id="project-profile-links">
+          <a href="https://rg-trello-rails.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/trello_clone_rails" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>This is a clone of the popular project management site, <a href="https://www.trello.com/" target="_blank">Trello</a>. It was built with Rails 5 and Backbone.js, and it uses Handlebars for templating.</p>
+          <p>My goal for this project was to create a fully fleshed-out application with user subscription services and a complex front-end.</p>
+          <p>Features include:</p>
+          <ul>
+            <li>Users can subscribe for accounts for $4.99 per month. Payments are handled by <a href="https://stripe.com/" target="_blank">Stripe</a>.</li>
+            <li>Registered users can manage their account info and credit card info.</li>
+            <li>Registered users can de-activate, re-activate, and delete their account.</li>
+            <li>Registered users can have a password-reset email sent to them if they forget their password.</li>
+            <li>Subscribed users can create and modify boards, lists, and cards.</li>
+            <li>Subscribed users can upload and download images. Image uploads are handled by the <a href="https://github.com/carrierwaveuploader/carrierwave" target="_blank">CarrierWave</a> gem, and image files are hosted by Amazon S3.</li>
+            <li>Cards can hold a variety of information, such as notes, due dates, labels, images, and activity.</li>
+            <li>Cards can be moved between lists, and lists can be moved between boards via drag &amp; drop functionality.</li>
+            <li>Admins get free TrelloClone subscriptions.</li>
+            <li>Admins can manage the accounts of the other users.</li>
+            <li>Admins can view all credit card payments.</li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+    <script id="synth-forum-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/synth_erd.png" />
+        <img src="images/synth2.jpg" />
+        <img src="images/synth3.jpg" />
+        <img src="images/synth6.jpg" />
+        <img src="images/synth1.jpg" />
+        <img src="images/synth5.jpg" />
+        <img src="images/synth4.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Synth Forum</h1>
+        <div id="project-profile-links">
+          <a href="https://synth-forum.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/synth_forum" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>This is a single-page forum app, based on <a href="https://www.reddit.com/" target="_blank">Reddit</a>. It uses Ember.js for a front-end and Rails 5 for a back-end.</p>
+          <p>Reddit is probably in my top 3 most visited websites, so I wanted to recreate it as a learning experience. I chose to make it a SPA because I had been spending a lot of time practicing web development with Ember, and I wanted to make a nice polished Ember app to show off.</p>
+          <p>Features include:</p>
+          <ul>
+            <li>Users can register for new accounts.</li>
+            <li>Registered users can manage their profiles.</li>
+            <li>Registered users can create and edit topics in forums.</li>
+            <li>Registered users can create and edit posts in topics.</li>
+            <li>Registered users can save topics.</li>
+            <li>Registered users can upvote or downvote topics.</li>
+            <li>Registered users can send messages to other registered users.</li>
+            <li>Admins can create and edit forums.</li>
+            <li>Admins can manage all users' accounts, forums, topics, and posts.</li>
+            <li>Authentication is token-based. Tokens are stored in localStorage. </li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+    <script id="personal-planner-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/planner_erd.png" />
+        <img src="images/planner1.jpg" />
+        <img src="images/planner2.jpg" />
+        <img src="images/planner3.jpg" />
+        <img src="images/planner4.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Personal Planner</h1>
+        <div id="project-profile-links">
+          <a href="https://rg-personal-planner.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/contacts_manager" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>A personal planner app made with Rails 4, featuring an address book, calendar, note pad, and todo list.</p>
+          <p>I made several todo lists, address books and calendars in the early phases of my campaign to learn Web Development. After I learned Rails I decided to merge all those ideas together and add a functioning back-end. It's a basic app, but I think the user experience is pretty smooth.</p>
+          <p>Features include:</p>
+          <ul>
+            <li>Users can create and modify accounts.</li>
+            <li>Registered users can create and modify contacts.</li>
+            <li>Registered users can create and modify notes.</li>
+            <li>Registered users can create and modify events.</li>
+            <li>Registered users can create and modify todos.</li>
+            <li>Notes, events, and todos will appear on the calendar on the associated date.</li>
+          </ul>
+          <p>The calendar was created using the <a href="https://github.com/excid3/simple_calendar" tagret="_blank">Simple Calendar</a> gem.</p>
+        </div>
+      </div>
+    </script>
+
+    <script id="postit-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/postit_erd.png" />
+        <img src="images/postit1.jpg" />
+        <img src="images/postit2.jpg" />
+        <img src="images/postit3.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Postit</h1>
+        <div id="project-profile-links">
+          <a href="https://rg-reddit-clone.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/postit" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>This is a simple forum app, similar to <a href="https://www.reddit.com/" target="_blank">Reddit</a>, that I made as a Rails learning tool. This app was part of the <a href="https://launchschool.com/" target="_blank">Launch School</a> curriculum, and it was made with assistance from Launch School. Made with Rails 4.</p>
+          <p>Features include:</p>
+          <ul>
+            <li>Users can register an account.</li>
+            <li>Registered users can edit their profile.</li>
+            <li>Registered users can create new categories.</li>
+            <li>Registered users can create new posts.</li>
+            <li>Registered users can comment on posts.</li>
+            <li>Registered users can vote on posts and comments.</li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+
+    <script id="contacts-manager-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/contacts1.jpg" />
+        <img src="images/contacts2.jpg" />
+        <img src="images/contacts3.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Contacts Manager</h1>
+        <div id="project-profile-links">
+          <a href="https://rgilbert82.github.io/contacts_manager_2/" target="_blank">GitHub.io</a><!--
+          --><a href="https://github.com/rgilbert82/contacts_manager_2" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>A simple single-page address book app. Made with just ES5 JavaScript and jQuery.</p>
+          <p>Users can create contacts, edit contacts, and search contacts. Data is stored in localStorage.</p>
+        </div>
+      </div>
+    </script>
+
+    <script id="todo-list-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/todo1.jpg" />
+        <img src="images/todo2.jpg" />
+        <img src="images/todo3.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Todo List</h1>
+        <div id="project-profile-links">
+          <a href="https://rgilbert82.github.io/todo_list/" target="_blank">GitHub.io</a><!--
+          --><a href="https://github.com/rgilbert82/todo_list_vanilla" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>A simple single-page todo list app. Made with vanilla ES5 JavaScript.</p>
+          <p>Users can create todos, edit todos, mark todos as complete or incomplete, and search todos by date. Data is stored in localStorage.</p>
+        </div>
+      </div>
+    </script>
+
+    <script id="ledzep-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/ledzep1.jpg" />
+        <img src="images/ledzep2.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Music Collection</h1>
+        <div id="project-profile-links">
+          <a href="https://rg-led-zep-discography.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/led_zep_discography" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>A simple single-page music collection app, made with Node and Backbone.</p>
+          <p>Users can scan through Led Zeppelin's glorious discography.</p>
+        </div>
+      </div>
+    </script>
+
+    <script id="contacts-sinatra-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/contacts_sinatra_1.jpg" />
+        <img src="images/contacts_sinatra_2.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Contacts Manager</h1>
+        <div id="project-profile-links">
+          <a href="https://rg-contacts-manager.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/contacts_manager_3" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>Yet another contacts manager app! You can totally manage the heck out of your contacts! OMG!</p>
+          <p>Made with Sinatra!</p>
+          <p>!!!</p>
+        </div>
+      </div>
+    </script>
+
+    <script src="javascripts/portfolio.js"></script>
+  </body>
+</html>
