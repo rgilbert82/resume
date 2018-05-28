@@ -8,6 +8,7 @@ var projectWindow = {
   createTemplates: function() {
     this.trelloTemplate =       Handlebars.compile($("#trello-clone-profile").remove().html());
     this.trelloRailsTemplate =  Handlebars.compile($("#trello-rails-profile").remove().html());
+    this.streamerTemplate =     Handlebars.compile($("#streamer-profile").remove().html());
     this.synthForumTemplate =   Handlebars.compile($("#synth-forum-profile").remove().html());
     this.tweeterTemplate =      Handlebars.compile($("#tweeter-profile").remove().html());
     this.fivechanTemplate =     Handlebars.compile($("#fivechan-profile").remove().html());
@@ -45,6 +46,9 @@ var projectWindow = {
         break;
       case "trello-rails":
         this.openModal(this.trelloRailsTemplate);
+        break;
+      case "streamer":
+        this.openModal(this.streamerTemplate);
         break;
       case "synth-forum":
         this.openModal(this.synthForumTemplate);
