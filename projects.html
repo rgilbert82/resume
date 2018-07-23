@@ -141,6 +141,19 @@
           </div>
         </li>
 
+        <li id="techblog">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/techblog1.jpg" />
+            </a>
+          </div>
+          <div class="app-summary">
+            <h3><a class="profile-link" href="#">TechBlog</a></h3>
+            <p>A simple single-page blog app, in the style of <a href="https://medium.freecodecamp.org/" target="_blank">Medium</a>. Made with an <b>Express</b> back-end and <b>Vue.js</b> front-end.</p>
+            <p>Users can login to their Google account with <b>OAuth 2.0</b> and comment in the blog forums. Admins can create and modify blog posts.</p>
+          </div>
+        </li>
+
         <li id="discography">
           <div class="app-thumb">
             <a class="profile-link" href="#">
@@ -358,6 +371,34 @@
             <li>Admins can delete posts and comments.</li>
             <li>Image uploads are browser-based, and files are hosted by Amazon S3.</li>
             <li>Admin authentication is token-based. Tokens are stored in cookies. </li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+    <script id="techblog-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/techblog_erd.png" />
+        <img src="images/techblog1.jpg" />
+        <img src="images/techblog2.jpg" />
+        <img src="images/techblog3.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>TechBlog</h1>
+        <div id="project-profile-links">
+          <a href="https://rg-tech-blog.herokuapp.com/" target="_blank">Heroku</a><!--
+          --><a href="https://github.com/rgilbert82/tech_blog_frontend" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>This is a basic single-page blog app. It is similar to <a href="https://medium.freecodecamp.org/" target="_blank">Medium</a>.</p>
+          <p>I used Express with a PostgreSQL database for the backend, and Vue for the front.</p>
+          <p>Features include:</p>
+          <ul>
+            <li>Users can login with their Google account via OAuth.</li>
+            <li>Logged in users can comment on blog posts and in conversations.</li>
+            <li>Admin users can create new blog posts.</li>
           </ul>
         </div>
       </div>

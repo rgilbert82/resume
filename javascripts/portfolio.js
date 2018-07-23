@@ -12,6 +12,7 @@ var projectWindow = {
     this.synthForumTemplate =   Handlebars.compile($("#synth-forum-profile").remove().html());
     this.tweeterTemplate =      Handlebars.compile($("#tweeter-profile").remove().html());
     this.fivechanTemplate =     Handlebars.compile($("#fivechan-profile").remove().html());
+    this.techblogTemplate =     Handlebars.compile($("#techblog-profile").remove().html());
     this.discographyTemplate =  Handlebars.compile($("#discography-profile").remove().html());
     this.protoBlogTemplate =    Handlebars.compile($("#proto-blog-profile").remove().html());
     this.yelpTemplate =         Handlebars.compile($("#yelp-clone-profile").remove().html());
@@ -58,6 +59,9 @@ var projectWindow = {
         break;
       case "fivechan":
         this.openModal(this.fivechanTemplate);
+        break;
+      case "techblog":
+        this.openModal(this.techblogTemplate);
         break;
       case "discography":
         this.openModal(this.discographyTemplate);
