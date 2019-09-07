@@ -6,22 +6,22 @@ var $modalWindow = $modalLayer.find("#project-window");
 
 var projectWindow = {
   createTemplates: function() {
-    this.trelloTemplate =       Handlebars.compile($("#trello-clone-profile").remove().html());
-    this.trelloRailsTemplate =  Handlebars.compile($("#trello-rails-profile").remove().html());
-    this.streamerTemplate =     Handlebars.compile($("#streamer-profile").remove().html());
-    this.synthForumTemplate =   Handlebars.compile($("#synth-forum-profile").remove().html());
-    this.tweeterTemplate =      Handlebars.compile($("#tweeter-profile").remove().html());
-    this.fivechanTemplate =     Handlebars.compile($("#fivechan-profile").remove().html());
-    this.techblogTemplate =     Handlebars.compile($("#techblog-profile").remove().html());
-    this.discographyTemplate =  Handlebars.compile($("#discography-profile").remove().html());
-    this.protoBlogTemplate =    Handlebars.compile($("#proto-blog-profile").remove().html());
-    this.yelpTemplate =         Handlebars.compile($("#yelp-clone-profile").remove().html());
-    this.plannerTemplate =      Handlebars.compile($("#personal-planner-profile").remove().html());
-    this.postitTemplate =       Handlebars.compile($("#postit-profile").remove().html());
-    this.contactsTemplate =     Handlebars.compile($("#contacts-manager-profile").remove().html());
-    this.todoListTemplate =     Handlebars.compile($("#todo-list-profile").remove().html());
-    this.ledzepTemplate =       Handlebars.compile($("#ledzep-profile").remove().html());
-    this.contacts2Template =    Handlebars.compile($("#contacts-sinatra-profile").remove().html());
+    this.trelloTemplate =         Handlebars.compile($("#trello-clone-profile").remove().html());
+    this.trelloRailsTemplate =    Handlebars.compile($("#trello-rails-profile").remove().html());
+    this.streamerTemplate =       Handlebars.compile($("#streamer-profile").remove().html());
+    this.synthForumTemplate =     Handlebars.compile($("#synth-forum-profile").remove().html());
+    this.tweeterTemplate =        Handlebars.compile($("#tweeter-profile").remove().html());
+    this.fivechanTemplate =       Handlebars.compile($("#fivechan-profile").remove().html());
+    this.techblogTemplate =       Handlebars.compile($("#techblog-profile").remove().html());
+    this.discographyTemplate =    Handlebars.compile($("#discography-profile").remove().html());
+    this.protoBlogTemplate =      Handlebars.compile($("#proto-blog-profile").remove().html());
+    this.yelpTemplate =           Handlebars.compile($("#yelp-clone-profile").remove().html());
+    this.plannerTemplate =        Handlebars.compile($("#personal-planner-profile").remove().html());
+    this.contactsTemplate =       Handlebars.compile($("#contacts-manager-profile").remove().html());
+    this.todoListTemplate =       Handlebars.compile($("#todo-list-profile").remove().html());
+    this.ledzepTemplate =         Handlebars.compile($("#ledzep-profile").remove().html());
+    this.contacts2Template =      Handlebars.compile($("#contacts-sinatra-profile").remove().html());
+    this.shapeGeneratorTemplate = Handlebars.compile($("#shape-generator-profile").remove().html());
   },
   hideModal: function() {
     $("body").removeClass("noscroll");
@@ -72,9 +72,6 @@ var projectWindow = {
       case "personal-planner":
         this.openModal(this.plannerTemplate);
         break;
-      case "postit":
-        this.openModal(this.postitTemplate);
-        break;
       case "contacts-manager":
         this.openModal(this.contactsTemplate);
         break;
@@ -86,6 +83,9 @@ var projectWindow = {
         break;
       case "contacts-sinatra":
         this.openModal(this.contacts2Template);
+        break;
+      case "shape-generator":
+        this.openModal(this.shapeGeneratorTemplate);
         break;
     }
   },

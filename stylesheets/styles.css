@@ -24,6 +24,8 @@ a:hover {
 header {
   background-color: #293f50;
   color: #fff;
+  position: relative;
+  z-index: 100;
 }
 
 div#header-wrapper {
@@ -351,6 +353,8 @@ ul.apps-list .app-summary p + p {
 footer {
   padding: 20px 0;
   background-color: #293f50;
+  position: relative;
+  z-index: 100;
 }
 
 footer h6,
@@ -644,6 +648,19 @@ footer div#footer-wrapper {
   ul.apps-list {
     padding-left: 50px;
   }
+}
+
+.space-invader {
+  width: 100px;
+  display: inline-block;
+  position: fixed;
+  top: -200px;
+  z-index: 10;
+}
+
+.space-invader img {
+  width: 100%;
+  display: block;
 }
 
 
