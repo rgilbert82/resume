@@ -27,7 +27,7 @@ header {
 }
 
 div#header-wrapper {
-  width: 1000px;
+  max-width: 1000px;
   padding: 40px 40px 20px 40px;
   margin: 0 auto;
   overflow: hidden;
@@ -68,7 +68,7 @@ header h5 a {
 nav#main-nav,
 nav#projects-nav {
   margin: 0 auto;
-  width: 1000px;
+  max-width: 1000px;
   padding: 20px 40px 40px 40px;
 }
 
@@ -96,7 +96,7 @@ nav#projects-nav ul li a {
 /*Sections*/
 
 section {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -168,6 +168,10 @@ section h2 {
   font-size: 18px;
 }
 
+.main-projects section h2 {
+  margin-bottom: 0;
+}
+
 #summary, #education, #experience {
   padding-bottom: 40px;
 }
@@ -186,7 +190,7 @@ section h2 {
 }
 
 #technical dl + dl {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 #technical dl dt {
@@ -198,7 +202,7 @@ section h2 {
 }
 
 #education-and-experience dl + dl {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 #education-and-experience dl dt,
@@ -249,7 +253,7 @@ section h2 {
 /*Projects Page*/
 
 #projects-header {
-  padding: 20px 40px 0 40px;
+  padding: 20px 40px;
 }
 
 #projects-header h1 {
@@ -283,12 +287,12 @@ ul.apps-list .app-summary {
 }
 
 ul.apps-list {
-  padding: 0 50px;
+  padding: 0 0 0 50px;
 }
 
 ul.apps-list li {
   display: block;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 ul.apps-list li + li {
@@ -300,7 +304,7 @@ ul.apps-list li:last-child {
 }
 
 ul.apps-list .app-thumb {
-  width: 350px;
+  width: 40%;
 }
 
 ul.apps-list .app-thumb a {
@@ -320,7 +324,7 @@ ul.apps-list .app-thumb a:hover img {
 }
 
 ul.apps-list .app-summary {
-  width: 450px;
+  width: 60%;
   padding-left: 30px;
 }
 
@@ -362,7 +366,7 @@ footer h6 {
 }
 
 footer div#footer-wrapper {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
@@ -410,7 +414,7 @@ footer div#footer-wrapper {
 }
 
 #project-modal #project-window {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -465,7 +469,7 @@ footer div#footer-wrapper {
 
 #project-profile-links {
   padding: 15px 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #293f50;
 }
 
@@ -504,4 +508,182 @@ footer div#footer-wrapper {
 
 .noscroll {
   overflow: hidden;
+}
+
+
+@media screen and (max-width: 1100px) {
+  #project-window .col1 {
+    width: 60%;
+  }
+
+  #project-window .col2 {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #project-window .col1,
+  #project-window .col2 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #project-window {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  #project-window .col1,
+  #project-window .col2 {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+
+  #project-window .col1 {
+    order: 2;
+  }
+
+  #project-window .col2 {
+    order: 1;
+    margin-bottom: 50px;
+  }
+
+  #project-profile-links {
+    margin-bottom: 30px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  nav#main-nav ul li,
+  nav#projects-nav ul li {
+    display: block;
+    text-align: left;
+  }
+
+  nav#main-nav ul li,
+  nav#projects-nav ul li {
+    width: 100%;
+  }
+
+  #summary,
+  #education {
+    border-bottom: 1px solid #888;
+    margin-bottom: 40px;
+  }
+
+  .section-details p {
+    width: 100%;
+  }
+
+  section#projects {
+    padding: 0 40px;
+  }
+
+  section#projects div#home-projects-wrapper li {
+    width: 50%;
+  }
+
+  ul.apps-list {
+    padding-left: 100px;
+  }
+
+  ul.apps-list .app-thumb,
+  ul.apps-list .app-summary {
+    display: block;
+    width: 100%;
+  }
+
+  ul.apps-list .app-summary {
+    padding-left: 0;
+    padding-top: 40px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  header div#header-wrapper div:nth-child(1),
+  header div#header-wrapper div:nth-child(2) {
+    float: none;
+  }
+
+  header div#header-wrapper div:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  .section-details {
+    padding-left: 50px;
+  }
+
+  .section-details p {
+    text-align: left;
+  }
+
+  #education-and-experience dl {
+    padding-left: 50px;
+  }
+
+  #education-and-experience dl dt,
+  #education-and-experience dl dd {
+    display: block;
+    width: 100%;
+  }
+
+  #education-and-experience dl dd ul {
+    padding-top: 15px;
+    width: 100%;
+  }
+
+  #education-and-experience dl + dl {
+    margin-top: 40px;
+  }
+
+  ul.apps-list {
+    padding-left: 50px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  section#projects div#home-projects-wrapper li {
+    width: 100%;
+    display: block;
+    padding: 10px 50px 10px 50px;
+  }
+
+  #project-window {
+    padding: 40px 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section h2 {
+    font-size: 22px;
+  }
+
+  #modal-layer #project-modal {
+    top: 40px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+
+  ul.apps-list {
+    padding-left: 0;
+  }
+
+  .section-details {
+    padding-left: 0;
+  }
+
+  section#projects div#home-projects-wrapper li {
+    padding: 10px 0;
+  }
+
+  #education-and-experience dl {
+    padding-left: 0;
+  }
 }
