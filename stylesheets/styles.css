@@ -11,6 +11,57 @@ body {
   background-color: #fff;
 }
 
+body.body-space-invader-killed header.header-footer,
+body.body-space-invader-killed footer.header-footer {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+body.body-space-invader-killed .header-footer h1 {
+  color: #00FF87;
+}
+
+body.body-space-invader-killed .header-footer h2,
+body.body-space-invader-killed .header-footer h4,
+body.body-space-invader-killed .header-footer h5,
+body.body-space-invader-killed .header-footer h6,
+body.body-space-invader-killed .header-footer a,
+body.body-space-invader-killed .header-footer small {
+  color: #000 !important;
+}
+
+body.body-space-invader-killed #main-content {
+  background-color: #000;
+  color: #fff !important;
+}
+
+body.body-space-invader-killed #main-content h2,
+body.body-space-invader-killed #main-content a {
+  color: #fff !important;
+}
+
+.transitionable,
+.transitionable a,
+.transitionable small,
+.transitionable h1,
+.transitionable h2,
+.transitionable h4,
+.transitionable h5,
+.transitionable h6 {
+  transition: all 0.6s linear
+}
+
+body.body-space-invader-killed .transitionable,
+body.body-space-invader-killed .transitionable a,
+body.body-space-invader-killed .transitionable small,
+body.body-space-invader-killed .transitionable h1,
+body.body-space-invader-killed .transitionable h2,
+body.body-space-invader-killed .transitionable h4,
+body.body-space-invader-killed .transitionable h5,
+body.body-space-invader-killed .transitionable h6 {
+  transition: all 0.1s linear
+}
+
 a {
   text-decoration: none;
 }
@@ -25,7 +76,7 @@ header {
   background-color: #293f50;
   color: #fff;
   position: relative;
-  z-index: 100;
+  z-index: 110;
 }
 
 div#header-wrapper {
@@ -354,7 +405,7 @@ footer {
   padding: 20px 0;
   background-color: #293f50;
   position: relative;
-  z-index: 100;
+  z-index: 110;
 }
 
 footer h6,
@@ -655,7 +706,11 @@ footer div#footer-wrapper {
   display: inline-block;
   position: fixed;
   top: -200px;
-  z-index: 10;
+  z-index: 101;
+}
+
+.space-invader.space-invader-killed {
+  z-index: 1000;
 }
 
 .space-invader img {

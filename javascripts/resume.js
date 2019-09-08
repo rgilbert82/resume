@@ -38,10 +38,43 @@ function animateInvader(invader, width) {
   });
 }
 
+function explodeInvader(e) {
+  var $target  = $(e.currentTarget);
+  var $body    = $('body');
+
+  if ($target.hasClass('space-invader-killed')) { return; }
+
+  $target.stop();
+  $target.addClass('space-invader-killed');
+
+  $target.css({
+    'transition': 'all 0.1s linear',
+    'filter': 'invert(100%) sepia(74%) saturate(4738%) hue-rotate(91deg) brightness(103%) contrast(102%)',
+    'width': '250px'
+  });
+
+  $body.addClass('body-space-invader-killed');
+
+  setTimeout(function() {
+    $target.css({
+      'transition': 'all 0.75s linear',
+      'filter': 'invert(22%) sepia(97%) saturate(7488%) hue-rotate(358deg) brightness(98%) contrast(109%)',
+      'transform': 'translateX(-100%) rotate(360deg)',
+      'width': '0'
+    });
+
+    $body.removeClass('body-space-invader-killed');
+  }, 150);
+
+  setTimeout(function() {
+    $target.remove();
+  }, 1500);
+}
+
 // ============================================================================
 
 function generateSpaceInvader() {
-  var imageSrc = 'images/invader.gif';
+  var imageSrc = 'images/invader-blue.gif';
   var div      = document.createElement('div');
   var image    = document.createElement('img');
 
@@ -56,4 +89,8 @@ function generateSpaceInvader() {
 
 // ============================================================================
 
-setInterval(generateSpaceInvader, 15000);
+setInterval(generateSpaceInvader, 20000);
+
+
+$('body').on('mouseenter', '.space-invader', explodeInvader);
+$('body').on('click', '.space-invader', explodeInvader);

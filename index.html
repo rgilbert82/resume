@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="header-footer transitionable">
       <div id="header-wrapper">
         <div>
           <h1>Ryan Gilbert</h1>
@@ -35,204 +35,208 @@
       </nav>
     </header>
 
-    <section id="summary-content">
-      <div id="summary">
-        <h2>Summary</h2>
-        <div class="section-details">
-          <p><b>JavaScript</b> &amp; <b>Ruby</b> Developer, former Commercial Music Composer, New Havenite, tea connoisseur, 8-bit Nintendo enthusiast, and consistently broken-hearted NY Jets fan.</p>
-          <p>Currently residing in sunny Los Angeles.</p>
+    <div id="main-content" class="transitionable">
+
+      <section id="summary-content">
+        <div id="summary">
+          <h2>Summary</h2>
+          <div class="section-details">
+            <p><b>JavaScript</b> &amp; <b>Ruby</b> Developer, former Commercial Music Composer, New Havenite, tea connoisseur, 8-bit Nintendo enthusiast, and consistently broken-hearted NY Jets fan.</p>
+            <p>Currently residing in sunny Los Angeles.</p>
+          </div>
         </div>
-      </div>
 
-      <div id="technical">
-        <h2>Technical Skills</h2>
-        <div class="section-details">
+        <div id="technical">
+          <h2>Technical Skills</h2>
+          <div class="section-details">
+            <dl>
+              <dt>Programming Languages:</dt>
+              <dd>JavaScript(ES5, ES6+), Ruby, Python</dd>
+            </dl>
+            <dl>
+              <dt>Frameworks / Libraries:</dt>
+              <dd>Ruby on Rails, Express</dd>
+              <dd>React/Redux, Vue, Ember, Backbone, jQuery</dd>
+            </dl>
+            <dl>
+              <dt>CMS:</dt>
+              <dd>Shopify, CraftCMS</dd>
+            </dl>
+            <dl>
+              <dt>Markup / Styling / Templating:</dt>
+              <dd>HTML, CSS</dd>
+              <dd>Sass, Stylus</dd>
+              <dd>ERB, Haml, Handlebars, Liquid, Twig</dd>
+            </dl>
+            <dl>
+              <dt>Database Systems:</dt>
+              <dd>PostgreSQL, SQLite</dd>
+            </dl>
+            <dl>
+              <dt>Testing</dt>
+              <dd>Jest, RSpec</dd>
+            </dl>
+            <dl>
+              <dt>Tracking:</dt>
+              <dd>Facebook Catalogs, Facebook Pixels</dd>
+              <dd>Google Adwords, Google Analytics, Google Tag Manager</dd>
+            </dl>
+            <dl>
+              <dt>Version Control:</dt>
+              <dd>Git, GitHub, Bitbucket</dd>
+            </dl>
+            <dl>
+              <dt>Other Relevant Skills:</dt>
+              <dd>Hubspot, Klaviyo, Listrak, Mailchimp</dd>
+              <dd>Adobe Photoshop, GIMP</dd>
+              <dd>Csound, D3.js</dd>
+              <dd>Karaoke, Mario Kart</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div id="home-projects-wrapper">
+          <h2>Personal Projects</h2>
+          <ul>
+            <li>
+              <a href="projects.html#rails-apps" >
+                <img src="images/trello10.jpg" />
+                <div class="dark-layer">
+                  <h6>Ruby on Rails Apps</h6>
+                </div>
+              </a>
+            </li><!--
+
+            --><li>
+              <a href="projects.html#express-apps" >
+                <img src="images/proto2.jpg" />
+                <div class="dark-layer">
+                  <h6>Express Apps</h6>
+                </div>
+              </a>
+            </li><!--
+
+            --><li>
+              <a href="projects.html#misc-apps" >
+                <img src="images/shape_generator_1.jpg" />
+                <div class="dark-layer">
+                  <h6>Misc Small Apps</h6>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="education-and-experience">
+        <div id="education">
+          <h2>Education</h2>
           <dl>
-            <dt>Programming Languages:</dt>
-            <dd>JavaScript(ES5, ES6+), Ruby, Python</dd>
-          </dl>
-          <dl>
-            <dt>Frameworks / Libraries:</dt>
-            <dd>Ruby on Rails, Express</dd>
-            <dd>React/Redux, Vue, Ember, Backbone, jQuery</dd>
-          </dl>
-          <dl>
-            <dt>CMS:</dt>
-            <dd>Shopify, CraftCMS</dd>
-          </dl>
-          <dl>
-            <dt>Markup / Styling / Templating:</dt>
-            <dd>HTML, CSS</dd>
-            <dd>Sass, Stylus</dd>
-            <dd>ERB, Haml, Handlebars, Liquid, Twig</dd>
-          </dl>
-          <dl>
-            <dt>Database Systems:</dt>
-            <dd>PostgreSQL, SQLite</dd>
-          </dl>
-          <dl>
-            <dt>Testing</dt>
-            <dd>Jest, RSpec</dd>
-          </dl>
-          <dl>
-            <dt>Tracking:</dt>
-            <dd>Facebook Catalogs, Facebook Pixels</dd>
-            <dd>Google Adwords, Google Analytics, Google Tag Manager</dd>
-          </dl>
-          <dl>
-            <dt>Version Control:</dt>
-            <dd>Git, GitHub, Bitbucket</dd>
-          </dl>
-          <dl>
-            <dt>Other Relevant Skills:</dt>
-            <dd>Hubspot, Klaviyo, Listrak, Mailchimp</dd>
-            <dd>Adobe Photoshop, GIMP</dd>
-            <dd>Csound, D3.js</dd>
-            <dd>Karaoke, Mario Kart</dd>
+            <dt>
+              2001 - 2005
+            </dt>
+            <dd>
+              <h3>Berklee College of Music <small>- Boston, MA</small></h3>
+              <p>Bachelor's Degree in Audio Engineering / Sound Design</p>
+            </dd>
           </dl>
         </div>
-      </div>
-    </section>
 
-    <section id="projects">
-      <div id="home-projects-wrapper">
-        <h2>Personal Projects</h2>
-        <ul>
-          <li>
-            <a href="projects.html#rails-apps" >
-              <img src="images/trello10.jpg" />
-              <div class="dark-layer">
-                <h6>Ruby on Rails Apps</h6>
-              </div>
-            </a>
-          </li><!--
+        <div id="experience">
+          <h2>Work Experience</h2>
 
-          --><li>
-            <a href="projects.html#express-apps" >
-              <img src="images/proto2.jpg" />
-              <div class="dark-layer">
-                <h6>Express Apps</h6>
-              </div>
-            </a>
-          </li><!--
+          <dl>
+            <dt>
+              2018 - Present
+            </dt>
+            <dd>
+              <h3>SGS Agency <small>- Los Angeles, CA</small></h3>
+              <h5>Front End Web Developer</h5>
+              <ul>
+                <li>Built ecommerce Shopify stores for <a href="https://sgs-agency.com" target="_blank">SGS Agency</a>'s clients.</li>
+                <li>Inherited and maintained existing Shopify stores.</li>
+                <li>Created various landing pages and small website projects for clients.</li>
+                <li>Set up purchase tracking networks for ecommerce stores using Facebook Pixels, Google Analytics, Google Tag Manager, and other tools.</li>
+                <li>Set up automated email flows for ecommerce stores using Klaviyo, Mailchimp, Listrak, and other tools.</li>
+              </ul>
+            </dd>
+          </dl>
 
-          --><li>
-            <a href="projects.html#misc-apps" >
-              <img src="images/shape_generator_1.jpg" />
-              <div class="dark-layer">
-                <h6>Misc Small Apps</h6>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+          <dl>
+            <dt>
+              2015 - 2018
+            </dt>
+            <dd>
+              <h3>Freelance Independent Contractor <small>- Los Angeles, CA</small></h3>
+              <h5>Music Composer / Audio Engineer</h5>
+              <ul>
+                <li>Edited and mixed audio for various projects.</li>
+                <li>Composed, recorded, and mixed music tracks for music libraries and ad companies.</li>
+              </ul>
+            </dd>
+          </dl>
 
-    <section id="education-and-experience">
-      <div id="education">
-        <h2>Education</h2>
-        <dl>
-          <dt>
-            2001 - 2005
-          </dt>
-          <dd>
-            <h3>Berklee College of Music <small>- Boston, MA</small></h3>
-            <p>Bachelor's Degree in Audio Engineering / Sound Design</p>
-          </dd>
-        </dl>
-      </div>
+          <dl>
+            <dt>
+              2010 - 2014
+            </dt>
+            <dd>
+              <h3>Elias Arts <small>- Santa Monica, CA</small></h3>
+              <h5>Music Composer / Audio Engineer</h5>
+              <ul>
+                <li>Composed, recorded, and mixed music tracks for the <a href="http://www.eliasmusiclibrary.com" target="_blank" >Elias Music Library</a>.</li>
+              </ul>
+            </dd>
+          </dl>
 
-      <div id="experience">
-        <h2>Work Experience</h2>
+          <dl>
+            <dt>
+              2009 - 2010
+            </dt>
+            <dd>
+              <h3>Paramount Recording Studios <small>- Los Angeles, CA</small></h3>
+              <h5>Assistant Audio Engineer</h5>
+              <ul>
+                <li>Assisted Audio Engineers on music recording sessions.</li>
+                <li>Acted as Studio Manager during overnight recording sessions.</li>
+              </ul>
+            </dd>
+          </dl>
 
-        <dl>
-          <dt>
-            2018 - Present
-          </dt>
-          <dd>
-            <h3>SGS Agency <small>- Los Angeles, CA</small></h3>
-            <h5>Front End Web Developer</h5>
-            <ul>
-              <li>Built ecommerce Shopify stores for <a href="https://sgs-agency.com" target="_blank">SGS Agency</a>'s clients.</li>
-              <li>Inherited and maintained existing Shopify stores.</li>
-              <li>Created various landing pages and small website projects for clients.</li>
-              <li>Set up purchase tracking networks for ecommerce stores using Facebook Pixels, Google Analytics, Google Tag Manager, and other tools.</li>
-              <li>Set up automated email flows for ecommerce stores using Klaviyo, Mailchimp, Listrak, and other tools.</li>
-            </ul>
-          </dd>
-        </dl>
+          <dl>
+            <dt>
+              2008 - 2009
+            </dt>
+            <dd>
+              <h3>Rethink Autism <small>- New York, NY</small></h3>
+              <h5>Audio Engineer</h5>
+              <ul>
+                <li>Recorded and mixed dialogue and VO for an educational <a href="https://www.rethinked.com/" target="_blank">web video series</a>.</li>
+              </ul>
+            </dd>
+          </dl>
 
-        <dl>
-          <dt>
-            2015 - 2018
-          </dt>
-          <dd>
-            <h3>Freelance Independent Contractor <small>- Los Angeles, CA</small></h3>
-            <h5>Music Composer / Audio Engineer</h5>
-            <ul>
-              <li>Edited and mixed audio for various projects.</li>
-              <li>Composed, recorded, and mixed music tracks for music libraries and ad companies.</li>
-            </ul>
-          </dd>
-        </dl>
+          <dl>
+            <dt>
+              2006 - 2008
+            </dt>
+            <dd>
+              <h3>HSR|NY Recording Studios <small>- New York, NY</small></h3>
+              <h5>Assistant Audio Engineer</h5>
+              <ul>
+                <li>Assisted Audio Engineers on VO and ADR recording sessions for TV and film.</li>
+                <li>Acted as Machine Room Operator.</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </section>
 
-        <dl>
-          <dt>
-            2010 - 2014
-          </dt>
-          <dd>
-            <h3>Elias Arts <small>- Santa Monica, CA</small></h3>
-            <h5>Music Composer / Audio Engineer</h5>
-            <ul>
-              <li>Composed, recorded, and mixed music tracks for the <a href="http://www.eliasmusiclibrary.com" target="_blank" >Elias Music Library</a>.</li>
-            </ul>
-          </dd>
-        </dl>
+    </div>
 
-        <dl>
-          <dt>
-            2009 - 2010
-          </dt>
-          <dd>
-            <h3>Paramount Recording Studios <small>- Los Angeles, CA</small></h3>
-            <h5>Assistant Audio Engineer</h5>
-            <ul>
-              <li>Assisted Audio Engineers on music recording sessions.</li>
-              <li>Acted as Studio Manager during overnight recording sessions.</li>
-            </ul>
-          </dd>
-        </dl>
-
-        <dl>
-          <dt>
-            2008 - 2009
-          </dt>
-          <dd>
-            <h3>Rethink Autism <small>- New York, NY</small></h3>
-            <h5>Audio Engineer</h5>
-            <ul>
-              <li>Recorded and mixed dialogue and VO for an educational <a href="https://www.rethinked.com/" target="_blank">web video series</a>.</li>
-            </ul>
-          </dd>
-        </dl>
-
-        <dl>
-          <dt>
-            2006 - 2008
-          </dt>
-          <dd>
-            <h3>HSR|NY Recording Studios <small>- New York, NY</small></h3>
-            <h5>Assistant Audio Engineer</h5>
-            <ul>
-              <li>Assisted Audio Engineers on VO and ADR recording sessions for TV and film.</li>
-              <li>Acted as Machine Room Operator.</li>
-            </ul>
-          </dd>
-        </dl>
-      </div>
-    </section>
-
-    <footer>
+    <footer class="header-footer transitionable">
       <div id="footer-wrapper">
         <h6>Ryan Gilbert</h6>
         <h6><a href="mailto:ry.gil.online@gmail.com">ry.gil.online@gmail.com</a></h6>
