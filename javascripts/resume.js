@@ -59,7 +59,7 @@ function explodeInvader(e) {
     $target.css({
       'transition': 'all 0.75s linear',
       'filter': 'invert(22%) sepia(97%) saturate(7488%) hue-rotate(358deg) brightness(98%) contrast(109%)',
-      'transform': 'translateX(-100%) rotate(360deg)',
+      'transform': 'translateX(-100%) rotate(500deg)',
       'width': '0'
     });
 
