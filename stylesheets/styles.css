@@ -76,6 +76,9 @@ header {
   background-color: #293f50;
   color: #fff;
   position: relative;
+}
+
+header.header-index {
   z-index: 110;
 }
 
@@ -154,7 +157,7 @@ section {
 }
 
 section#summary-content {
-  padding: 40px;
+  padding: 0 40px 40px 40px;
 }
 
 section#projects {
@@ -210,7 +213,7 @@ section#projects div#home-projects-wrapper li img {
 }
 
 section#education-and-experience {
-  padding: 40px;
+  padding: 0 40px 40px 40px;
 }
 
 section h2 {
@@ -225,7 +228,11 @@ section h2 {
   margin-bottom: 0;
 }
 
-#summary, #education, #experience {
+#summary, #technical, #education, #experience {
+  padding-top: 40px;
+}
+
+#experience {
   padding-bottom: 40px;
 }
 
@@ -327,10 +334,10 @@ section h2 {
   color: #888;
 }
 
-section#express-apps,
-section#rails-apps,
+section#js-backend,
+section#ruby-backend,
 section#misc-apps {
-  padding: 40px;
+  padding: 40px 40px 80px 40px;
 }
 
 ul.apps-list .app-thumb,
@@ -439,7 +446,7 @@ footer div#footer-wrapper {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 100;
+  z-index: 120;
 }
 
 #modal-layer #modal-dark-layer span {

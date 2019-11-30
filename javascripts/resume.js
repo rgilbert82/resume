@@ -89,8 +89,31 @@ function generateSpaceInvader() {
 
 // ============================================================================
 
-setInterval(generateSpaceInvader, 20000);
-
+setInterval(generateSpaceInvader, 25000);
 
 $('body').on('mouseenter', '.space-invader', explodeInvader);
 $('body').on('click', '.space-invader', explodeInvader);
+
+// ============================================================================
+
+var smoothScroll = {
+  scrollToLink: function(e) {
+    var link = $(e.currentTarget).attr('data-href');
+    var section = $(link)[0];
+
+    e.preventDefault();
+
+    if (section) {
+      $('html').animate({ scrollTop: section.offsetTop }, 400);
+    }
+  },
+
+  init: function() {
+    $(document).on('click', '.js-link-down', this.scrollToLink.bind(this));
+  }
+};
+
+
+smoothScroll.init();
+
+// ============================================================================

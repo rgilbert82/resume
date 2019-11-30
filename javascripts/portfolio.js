@@ -4,6 +4,8 @@ var $modalLayer = $("#modal-layer");
 var $projectModal = $modalLayer.find("#project-modal");
 var $modalWindow = $modalLayer.find("#project-window");
 
+// ============================================================================
+
 var projectWindow = {
   createTemplates: function() {
     this.trelloTemplate =         Handlebars.compile($("#trello-clone-profile").remove().html());
@@ -99,4 +101,26 @@ var projectWindow = {
   }
 };
 
+// ============================================================================
+
+var smoothScroll = {
+  scrollToLink: function(e) {
+    var link = $(e.currentTarget).attr('data-href');
+    var section = $(link)[0];
+
+    e.preventDefault();
+
+    if (section) {
+      $('html').animate({ scrollTop: section.offsetTop }, 400);
+    }
+  },
+
+  init: function() {
+    $(document).on('click', '.js-link-down', this.scrollToLink.bind(this));
+  }
+};
+
+// ============================================================================
+
+smoothScroll.init();
 projectWindow.init();

@@ -27,21 +27,25 @@
 
       <nav id="projects-nav">
         <ul>
-          <li><a href="#rails-apps">Ruby on Rails Apps</a></li><!--
-          --><li><a href="#express-apps">Express Apps</a></li><!--
-          --><li><a href="#misc-apps">Misc Small Apps</a></li><!--
+          <li><a href="#ruby-backend" data-href="#ruby-backend" class="js-link-down">Ruby Backend</a></li><!--
+          --><li><a href="#js-backend" data-href="#js-backend" class="js-link-down">JavaScript Backend</a></li><!--
+          --><li><a href="#misc-apps" data-href="#misc-apps" class="js-link-down">Small Apps</a></li><!--
           --><li><a href="index.html">Resume</a></li>
         </ul>
       </nav>
     </header>
 
     <div id="projects-header">
-      <h1>Projects&nbsp;&nbsp;Portfolio</h1>
-      <aside>All projects were made from scratch, without any assistance or supervision.</aside>
+      <h1>Projects  Portfolio</h1>
+      <aside>
+        All projects were made from scratch, without any assistance or supervision.
+        <br/>
+        <b>Note:</b> Heroku apps are asleep and might take a few extra seconds to load.
+      </aside>
     </div>
 
-    <section id="rails-apps">
-      <h2>Ruby on Rails Apps</h2>
+    <section id="ruby-backend">
+      <h2>Full Stack: Ruby Backend</h2>
 
       <ul class="apps-list">
         <li id="trello-rails">
@@ -111,8 +115,8 @@
       </ul>
     </section>
 
-    <section id="express-apps">
-      <h2>Node/Express Apps</h2>
+    <section id="js-backend">
+      <h2>Full Stack: JavaScript Backend</h2>
 
       <ul class="apps-list">
 
@@ -124,7 +128,7 @@
           </div><!--
           --><div class="app-summary">
             <h3><a class="profile-link" href="#">Anon Forum</a></h3>
-            <p>A single-page, family-friendly version of <a href="http://www.4chan.org" target="_blank">4chan</a>. Made with an <b>Express</b> back-end and <b>Vanilla ES6</b> front-end.</p>
+            <p>A single-page, family-friendly version of <a href="http://www.4chan.org" target="_blank">4chan</a>. Made with an <b>Express</b> back-end and <b>vanilla ES6</b> front-end.</p>
             <p>Users can anonymously post, comment, and upload images to various forums. Image uploads are handled by <b>AWS</b>.</p>
           </div>
         </li>
@@ -142,19 +146,6 @@
           </div>
         </li>
 
-        <li id="techblog">
-          <div class="app-thumb">
-            <a class="profile-link" href="#">
-              <img src="images/techblog1.jpg" />
-            </a>
-          </div><!--
-          --><div class="app-summary">
-            <h3><a class="profile-link" href="#">TechBlog</a></h3>
-            <p>A simple single-page blog app, in the style of <a href="https://medium.freecodecamp.org/" target="_blank">Medium</a>. Made with an <b>Express</b> back-end and <b>Vue.js</b> front-end.</p>
-            <p>Users can login to their Google account with <b>OAuth 2.0</b> and comment in the blog forums. Admins can create and modify blog posts.</p>
-          </div>
-        </li>
-
         <li id="discography">
           <div class="app-thumb">
             <a class="profile-link" href="#">
@@ -165,6 +156,19 @@
             <h3><a class="profile-link" href="#">RG Discography</a></h3>
             <p>A single-page music collection app, based on <a href="https://bandcamp.com/" target="_blank">Bandcamp</a>. Made with <b>Express</b> and <b>Backbone.js</b>.</p>
             <p>Users can navigate through a discography, listen to albums and download albums. Albums are mostly comprised of infectious acid Nintendo grooves.</p>
+          </div>
+        </li>
+
+        <li id="techblog">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/techblog1.jpg" />
+            </a>
+          </div><!--
+          --><div class="app-summary">
+            <h3><a class="profile-link" href="#">TechBlog</a></h3>
+            <p>A simple single-page blog app, in the style of <a href="https://medium.freecodecamp.org/" target="_blank">Medium</a>. Made with an <b>Express</b> back-end and <b>Vue.js</b> front-end.</p>
+            <p>Users can login to their Google account with <b>OAuth 2.0</b> and comment in the blog forums. Admins can create and modify blog posts.</p>
           </div>
         </li>
 
@@ -184,7 +188,7 @@
     </section>
 
     <section id="misc-apps">
-      <h2>Misc Small Apps</h2>
+      <h2>Small Apps</h2>
 
       <ul class="apps-list">
         <li id="shape-generator">
@@ -197,6 +201,7 @@
             <h3><a class="profile-link" href="#">Shape Generator</a></h3>
             <p>A simple, fun app that generates floating shapes.</p>
             <p>You also have the option to add adorable dogs!</p>
+            <p>Made with <b>vanilla ES6</b>.</p>
           </div>
         </li>
 
@@ -233,24 +238,24 @@
             </a>
           </div><!--
           --><div class="app-summary">
-            <h3><a class="profile-link" href="#">Music Collection</a></h3>
+            <h3><a class="profile-link" href="#">Hammer of the Gods</a></h3>
             <p>A simple single-page music collection app, made with <b>Backbone.js</b>.</p>
             <p>Users can scan through Led Zeppelin's glorious discography.</p>
           </div>
         </li>
 
-        <li id="contacts-sinatra">
+        <!-- <li id="contacts-sinatra">
           <div class="app-thumb">
             <a class="profile-link" href="#">
               <img src="images/contacts_sinatra_2.jpg" />
             </a>
-          </div><!--
-          --><div class="app-summary">
+          </div>
+          <div class="app-summary">
             <h3><a class="profile-link" href="#">Contacts Manager</a></h3>
             <p>Yet another contacts manager app!</p>
             <p>Made with <b>Sinatra</b>.</p>
           </div>
-        </li>
+        </li> -->
       </ul>
     </section>
 
@@ -285,7 +290,7 @@
       --><div class="col2">
         <h1>Trello Clone <small>lite</small></h1>
         <div id="project-profile-links">
-          <a href="https://rg-trello-clone.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://rg-trello-clone.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/trello_clone" target="_blank">GitHub</a>
         </div>
 
@@ -310,7 +315,7 @@
       --><div class="col2">
         <h1>Tweeter</h1>
         <div id="project-profile-links">
-          <a href="https://rg-tweeter.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://rg-tweeter.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/twitter_clone_frontend" target="_blank">GitHub</a>
         </div>
 
@@ -342,7 +347,7 @@
       --><div class="col2">
         <h1>Anon Forum</h1>
         <div id="project-profile-links">
-          <a href="https://rg-anon-board.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://rg-anon-board.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/5chan" target="_blank">GitHub</a>
         </div>
 
@@ -374,7 +379,7 @@
       --><div class="col2">
         <h1>TechBlog</h1>
         <div id="project-profile-links">
-          <a href="https://rg-tech-blog.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://rg-tech-blog.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/tech_blog_frontend" target="_blank">GitHub</a>
         </div>
 
@@ -400,7 +405,7 @@
       --><div class="col2">
         <h1>RG Discography</h1>
         <div id="project-profile-links">
-          <a href="https://rg-discography.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://rg-discography.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/rg_discography" target="_blank">GitHub</a>
         </div>
 
@@ -426,7 +431,7 @@
       --><div class="col2">
         <h1>Proto Blog</h1>
         <div id="project-profile-links">
-          <a href="https://proto-blog.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://proto-blog.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/proto_blog" target="_blank">GitHub</a>
         </div>
 
@@ -454,7 +459,7 @@
       --><div class="col2">
         <h1>Yelp Clone</h1>
         <div id="project-profile-links">
-          <a href="https://rg-yelp-clone.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://rg-yelp-clone.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/yelp_clone" target="_blank">GitHub</a>
         </div>
         <div id="project-profile-description">
@@ -500,7 +505,7 @@
       --><div class="col2">
         <h1>Trello Clone</h1>
         <div id="project-profile-links">
-          <a href="https://rg-trello-rails.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://rg-trello-rails.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/trello_clone_rails" target="_blank">GitHub</a>
         </div>
 
@@ -537,7 +542,7 @@
       --><div class="col2">
         <h1>NASA Live Feed</h1>
         <div id="project-profile-links">
-          <a href="https://rg-streamer.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://rg-streamer.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/video_streamer_frontend" target="_blank">GitHub</a>
         </div>
 
@@ -569,7 +574,7 @@
       --><div class="col2">
         <h1>Synth Forum</h1>
         <div id="project-profile-links">
-          <a href="https://synth-forum.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://synth-forum.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/synth_forum" target="_blank">GitHub</a>
         </div>
 
@@ -605,7 +610,7 @@
       --><div class="col2">
         <h1>Personal Planner</h1>
         <div id="project-profile-links">
-          <a href="https://rg-personal-planner.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://rg-personal-planner.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/contacts_manager" target="_blank">GitHub</a>
         </div>
 
@@ -637,7 +642,7 @@
       --><div class="col2">
         <h1>Contacts Manager</h1>
         <div id="project-profile-links">
-          <a href="https://rgilbert82.github.io/contacts_manager_2/" target="_blank">Live App</a><!--
+          <a href="https://rgilbert82.github.io/contacts_manager_2/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/contacts_manager_2" target="_blank">GitHub</a>
         </div>
 
@@ -657,7 +662,7 @@
       --><div class="col2">
         <h1>Shape Generator</h1>
         <div id="project-profile-links">
-          <a href="https://rgilbert82.github.io/shape_generator/" target="_blank">Live App</a><!--
+          <a href="https://rgilbert82.github.io/shape_generator/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/shape_generator" target="_blank">GitHub</a>
         </div>
 
@@ -679,7 +684,7 @@
       --><div class="col2">
         <h1>Todo List</h1>
         <div id="project-profile-links">
-          <a href="https://rgilbert82.github.io/todo_list/" target="_blank">Live App</a><!--
+          <a href="https://rgilbert82.github.io/todo_list/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/todo_list_vanilla" target="_blank">GitHub</a>
         </div>
 
@@ -697,9 +702,9 @@
       </div><!--
 
       --><div class="col2">
-        <h1>Music Collection</h1>
+        <h1>Hammer of the Gods</h1>
         <div id="project-profile-links">
-          <a href="https://rg-led-zep-discography.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://rg-led-zep-discography.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/led_zep_discography" target="_blank">GitHub</a>
         </div>
 
@@ -719,7 +724,7 @@
       --><div class="col2">
         <h1>Contacts Manager</h1>
         <div id="project-profile-links">
-          <a href="https://rg-contacts-manager.herokuapp.com/" target="_blank">Heroku</a><!--
+          <a href="https://rg-contacts-manager.herokuapp.com/" target="_blank">Live Website</a><!--
           --><a href="https://github.com/rgilbert82/contacts_manager_3" target="_blank">GitHub</a>
         </div>
 
