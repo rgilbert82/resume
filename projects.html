@@ -36,7 +36,7 @@
     </header>
 
     <div id="projects-header">
-      <h1>Projects  Portfolio</h1>
+      <h1>Personal  Projects</h1>
       <aside>
         All projects were made from scratch, without any assistance or supervision.
         <br/>
@@ -44,7 +44,7 @@
       </aside>
     </div>
 
-    <section id="ruby-backend">
+    <section id="ruby-backend" class='apps-list'>
       <h2>Full Stack: Ruby Backend</h2>
 
       <ul class="apps-list">
@@ -61,16 +61,16 @@
           </div>
         </li>
 
-        <li id="streamer">
+        <li id="friendbook">
           <div class="app-thumb">
             <a class="profile-link" href="#">
-              <img src="images/streamer2.jpg" />
+              <img src="images/friendbook7.jpg" />
             </a>
           </div><!--
           --><div class="app-summary">
-            <h3><a class="profile-link" href="#">NASA Live Feed</a></h3>
-            <p>A live streaming video and chatbot app. Made with <b>Rails 5</b> and <b>ReactJS</b>.</p>
-            <p>Users can login to their Google account with <b>OAuth 2.0</b>, watch live streaming videos, and add messages to YouTube chat streams that update in realtime, via the <b>YouTube Data API</b>.</p>
+            <h3><a class="profile-link" href="#">Friendbook 1984</a></h3>
+            <p>A <a href="https://www.facebook.com/" target="_blank">Facebook</a>-esque social media app. Made with <b>Rails 5</b> and <b>ReactJS</b>.</p>
+            <p>Users can create and update accounts, create custom avatar illustrations, befriend other users, post content, like content, send private messages, and make cryptocurrency donations through <a href="https://www.coinbase.com/" target="_blank">Coinbase</a>.</p>
           </div>
         </li>
 
@@ -84,6 +84,19 @@
             <h3><a class="profile-link" href="#">Yelp Clone</a></h3>
             <p>A review app, based on <a href="https://www.yelp.com/" target="_blank">Yelp</a>. Made with <b>Rails 5</b>.</p>
             <p>Users can register for accounts, edit account info, make credit card payments, setup business pages, search businesses, review businesses, upload photos, send messages to other users, befriend other users, follow other users, and interact on forums. Image uploads are handled by <b>AWS</b>.</p>
+          </div>
+        </li>
+
+        <li id="streamer">
+          <div class="app-thumb">
+            <a class="profile-link" href="#">
+              <img src="images/streamer2.jpg" />
+            </a>
+          </div><!--
+          --><div class="app-summary">
+            <h3><a class="profile-link" href="#">NASA Live Feed</a></h3>
+            <p>A live streaming video and chatbot app. Made with <b>Rails 5</b> and <b>ReactJS</b>.</p>
+            <p>Users can login to their Google account with <b>OAuth 2.0</b>, watch live streaming videos, and add messages to YouTube chat streams that update in realtime, via the <b>YouTube Data API</b>.</p>
           </div>
         </li>
 
@@ -115,7 +128,7 @@
       </ul>
     </section>
 
-    <section id="js-backend">
+    <section id="js-backend" class='apps-list'>
       <h2>Full Stack: JavaScript Backend</h2>
 
       <ul class="apps-list">
@@ -187,7 +200,7 @@
       </ul>
     </section>
 
-    <section id="misc-apps">
+    <section id="misc-apps" class='apps-list'>
       <h2>Small Apps</h2>
 
       <ul class="apps-list">
@@ -525,6 +538,39 @@
             <li>Admins get free TrelloClone subscriptions.</li>
             <li>Admins can manage the accounts of the other users.</li>
             <li>Admins can view all credit card payments.</li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+    <script id="friendbook-profile" type="text/x-handlebars" >
+      <div class="col1">
+        <img src="images/friendbook_erd.png" />
+        <img src="images/friendbook7.jpg" />
+        <img src="images/friendbook1.jpg" />
+        <img src="images/friendbook3.jpg" />
+        <img src="images/friendbook4.jpg" />
+        <img src="images/friendbook5.jpg" />
+        <img src="images/friendbook6.jpg" />
+      </div><!--
+
+      --><div class="col2">
+        <h1>Friendbook 1984</h1>
+        <div id="project-profile-links">
+          <a href="https://rg-friendbook-1984.herokuapp.com/" target="_blank">Live Website</a><!--
+          --><a href="https://github.com/rgilbert82/social_frontend" target="_blank">GitHub</a>
+        </div>
+
+        <div id="project-profile-description">
+          <p>This is a retro-futuristic single-page social media app, in the style of 1980s cyberpunk. It was built with <b>Rails 5</b> and <b>React</b>.</p>
+          <p>Features include:</p>
+          <ul>
+            <li>Users can donate cryptocurrency to my <a href="https://www.coinbase.com/" target="_blank">Coinbase</a> account, should they desire.</li>
+            <li>Users can create and update accounts.</li>
+            <li>Registered users can create and update 8-bit avatar illustrations.</li>
+            <li>Registered users can befriend other users and send them private messages.</li>
+            <li>Registered users can post content and comment on other users' posts.</li>
+            <li>Registered users can like posts and comments.</li>
           </ul>
         </div>
       </div>

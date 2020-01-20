@@ -122,14 +122,16 @@ header h5 a {
 }
 
 nav#main-nav,
-nav#projects-nav {
+nav#projects-nav,
+nav#work-projects-nav {
   margin: 0 auto;
   max-width: 1000px;
   padding: 20px 40px 40px 40px;
 }
 
 nav#main-nav ul li,
-nav#projects-nav ul li {
+nav#projects-nav ul li,
+nav#work-projects-nav ul li {
   display: inline-block;
   text-align: center;
 }
@@ -143,7 +145,8 @@ nav#projects-nav ul li {
 }
 
 nav#main-nav ul li a,
-nav#projects-nav ul li a {
+nav#projects-nav ul li a,
+nav#work-projects-nav ul li a {
   color: #fff;
   text-transform: uppercase;
   font-size: 13px;
@@ -164,19 +167,26 @@ section#projects {
   padding: 0 40px;
 }
 
-section#projects div#home-projects-wrapper {
+section#projects div#home-projects-wrapper,
+section#projects div#home-work-projects-wrapper {
   padding: 40px 0;
   border-top: 1px solid #888;
   border-bottom: 1px solid #888;
 }
 
-section#projects div#home-projects-wrapper li {
+section#projects div#home-work-projects-wrapper {
+  border-top: none;
+}
+
+section#projects div#home-projects-wrapper li,
+section#projects div#home-work-projects-wrapper li {
   width: 33.3%;
   padding: 10px;
   display: inline-block;
 }
 
-section#projects div#home-projects-wrapper a {
+section#projects div#home-projects-wrapper a,
+section#projects div#home-work-projects-wrapper a {
   position: relative;
   display: block;
   border: 1px solid #ccc;
@@ -184,7 +194,8 @@ section#projects div#home-projects-wrapper a {
   line-height: 0;
 }
 
-section#projects div#home-projects-wrapper .dark-layer {
+section#projects div#home-projects-wrapper .dark-layer,
+section#projects div#home-work-projects-wrapper .dark-layer {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -195,7 +206,8 @@ section#projects div#home-projects-wrapper .dark-layer {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-section#projects div#home-projects-wrapper .dark-layer h6 {
+section#projects div#home-projects-wrapper .dark-layer h6,
+section#projects div#home-work-projects-wrapper .dark-layer h6 {
   text-transform: uppercase;
   display: block;
   position: absolute;
@@ -207,7 +219,8 @@ section#projects div#home-projects-wrapper .dark-layer h6 {
   font-weight: 300;
 }
 
-section#projects div#home-projects-wrapper li img {
+section#projects div#home-projects-wrapper li img,
+section#projects div#home-work-projects-wrapper li img {
   width: 100%;
   border-radius: 8px;
 }
@@ -283,7 +296,7 @@ section h2 {
 
 #education-and-experience dl dd small {
   font-weight: 300;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 #education-and-experience dl dd h5 {
@@ -334,10 +347,14 @@ section h2 {
   color: #888;
 }
 
-section#js-backend,
-section#ruby-backend,
-section#misc-apps {
+section.apps-list {
   padding: 40px 40px 80px 40px;
+}
+
+.apps-list-description {
+  display: block;
+  color: #888;
+  margin-top: 8px;
 }
 
 ul.apps-list .app-thumb,
@@ -543,6 +560,10 @@ footer div#footer-wrapper {
   font-size: 18px;
 }
 
+#project-profile-links a.full-width {
+  width: 100%;
+}
+
 #project-profile-description {
   margin-top: 10px;
 }
@@ -621,13 +642,15 @@ footer div#footer-wrapper {
 
 @media screen and (max-width: 700px) {
   nav#main-nav ul li,
-  nav#projects-nav ul li {
+  nav#projects-nav ul li,
+  nav#work-projects-nav ul li {
     display: block;
     text-align: left;
   }
 
   nav#main-nav ul li,
-  nav#projects-nav ul li {
+  nav#projects-nav ul li,
+  nav#work-projects-nav ul li {
     width: 100%;
   }
 
@@ -645,7 +668,8 @@ footer div#footer-wrapper {
     padding: 0 40px;
   }
 
-  section#projects div#home-projects-wrapper li {
+  section#projects div#home-projects-wrapper li,
+  section#projects div#home-work-projects-wrapper li {
     width: 50%;
   }
 
@@ -727,7 +751,8 @@ footer div#footer-wrapper {
 
 
 @media screen and (max-width: 500px) {
-  section#projects div#home-projects-wrapper li {
+  section#projects div#home-projects-wrapper li,
+  section#projects div#home-work-projects-wrapper li {
     width: 100%;
     display: block;
     padding: 10px 50px 10px 50px;
@@ -758,7 +783,8 @@ footer div#footer-wrapper {
     padding-left: 0;
   }
 
-  section#projects div#home-projects-wrapper li {
+  section#projects div#home-projects-wrapper li,
+  section#projects div#home-work-projects-wrapper li {
     padding: 10px 0;
   }
 
